@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar user={user}/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Sign setUser={setUser}/>} />
         <Route path="/Sign" element={<Sign setUser={setUser}/>} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/profile" element={<Profile setUser={setUser} />} />
